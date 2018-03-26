@@ -1,0 +1,26 @@
+@startuml
+start
+:申请服务;
+if(是新用户?)then(是)
+:登记用户信息;
+else(不是)
+endif
+:上门勘察;
+:指定方案;
+if(满意吗?)then(否)
+end
+else(是)
+:签订服务合同;
+fork
+:安排人工;
+fork again
+:安排材料;
+endfork;
+:填写派工单;
+:领取材料;
+:上门服务;
+:验收并填写反馈意见;
+:交回派工单;
+:结算收款;
+end
+@enduml
