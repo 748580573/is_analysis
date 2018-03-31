@@ -4,5 +4,5 @@
 # test1为pg107实验
 # test2为pg108实验
 
-![Image text]
+![Image]
 (https://github.com/748580573/is_analysis/blob/master/src/test1/flow2.png)
