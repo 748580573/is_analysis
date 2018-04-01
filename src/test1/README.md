@@ -35,8 +35,7 @@ end
 @enduml
 
 
-![Image text]
-(https://github.com/748580573/is_analysis/blob/master/src/test1/flow1.png)
+![Image text](https://github.com/748580573/is_analysis/blob/master/src/test1/flow1.png)
 
 
 @startuml
