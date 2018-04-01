@@ -64,3 +64,4 @@ endfork;
 :结算收款;
 end
 @enduml
+![实验二结果](https://github.com/748580573/is_analysis/blob/master/src/test1/flow2.png)
