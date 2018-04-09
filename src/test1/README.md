@@ -1,4 +1,5 @@
 # test
+```
 第一次实验
 =============================
 # test1为pg107实验
@@ -33,12 +34,11 @@ endfork;
     endfork;
 end
 @enduml
+```
 
+![Image text](https://github.com/748580573/is_analysis/blob/master/src/test1/flow1.png)
 
-![Image text]
-(https://raw.githubusercontent.com/hongmaju/light7Local/master/img/productShow/20170518152848.png)
-
-
+```
 @startuml
 start
 :申请服务;
@@ -65,3 +65,5 @@ endfork;
 :结算收款;
 end
 @enduml
+```
+![实验二结果](https://github.com/748580573/is_analysis/blob/master/src/test1/flow2.png)
