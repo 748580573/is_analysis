@@ -1,0 +1,6 @@
+@startuml
+ object visitor{
+    查询图书信息
+    注册账号
+ }
+@enduml

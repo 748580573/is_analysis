@@ -1,0 +1,55 @@
+@startuml
+
+package "library" #DDDDDD {
+
+	object 图书管理员 {
+		 username = "mrwu"
+		 password = "wuhengsdadfsd"
+	}
+
+
+
+	object reader {
+	 	username = "mrwu"
+		password = "wuhengsdadfsd"
+	}
+	object visitor {
+		注册账号
+	}
+
+	object book {
+	 	书名 = "信息系统分析与设计"
+	 	ISBN号 = "321-321-321-321"
+	 	总量 = "500"
+	 	库存 = "400"
+	 	价格 = "19"
+	 	出版社 = "科学出版社"
+	 	简介 = "好好阿红"
+	 	作者 = "王晓敏"
+	}
+
+	object order {
+	 	读者姓名 = "csh"
+	 	图书ISBN号 = "66-29-66"
+	 	借出时间 = "2011-4-10"
+	 	归还期限 = "2019-4-20"
+	}
+
+	note "<color:blue>省略Getter和Setter方法。</color>" as note1
+
+	图书 .. note1
+	note1 .. 借书记录
+
+
+	游客 <|-- 读者 : 注册登录
+	读者 "1" *-- "N" 借书记录 : 借书和还书
+	借书记录 "1" o-- "1" 图书 : 一一对应
+	借书记录 "N" -- "1" 图书管理员 : 登记和归还
+	图书管理员 "N" -- "N" 图书 : 维护图书
+	图书管理员 "N" -- "N" 读者 : 维护读者信息
+
+
+}
+
+
+@enduml
