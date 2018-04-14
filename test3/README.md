@@ -19,6 +19,8 @@ object order {
 
 ````
 ![借书记录](https://github.com/748580573/is_analysis/blob/master/test3/%E5%80%9F%E4%B9%A6%E8%AE%B0%E5%BD%95.png)
+
+
 流程三
 
 @startuml
@@ -36,6 +38,7 @@ object order {
 
 @endumll
 ````
+![图书对象](https://github.com/748580573/is_analysis/blob/master/test3/%E5%9B%BE%E4%B9%A6%E5%AF%B9%E8%B1%A1.png)
 
 ##### 流程三：游客对象
 
@@ -47,7 +50,7 @@ object order {
  }
 @enduml
 ````
-
+！[游客对象]（https://github.com/748580573/is_analysis/blob/master/test3/%E6%B8%B8%E5%AE%A2%E5%AF%B9%E8%B1%A1.png）
 
 ##### 流程四：管理员对象
 
@@ -61,8 +64,9 @@ object libraryManager {
 
 
 @enduml
-
 ````
+
+
 ##### 流程五：系统对象
 
 ````
