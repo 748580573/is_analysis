@@ -51,7 +51,7 @@ object order {
  }
 @enduml
 ````
-！[游客对象]（https://github.com/748580573/is_analysis/blob/master/test3/%E6%B8%B8%E5%AE%A2%E5%AF%B9%E8%B1%A1.png）
+！[游客对象](https://github.com/748580573/is_analysis/blob/master/test3/%E6%B8%B8%E5%AE%A2%E5%AF%B9%E8%B1%A1.png)
 
 
 ##### 流程四：管理员对象
