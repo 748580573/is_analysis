@@ -4,6 +4,4 @@ object 图书管理员 {
 		 username = "mrwu"
 		 password = "wuhengadasd"
 }
-
-
 @enduml
