@@ -39,14 +39,14 @@ package "library" #DDDDDD {
 
 	 note "<color:white>省略Getter和Setter方法。</color>" as note1
 
-	图书 .. note1
+	book .. note1
 	note1 .. 借书记录
-	游客 <|-- 读者 : 注册登录
-	读者 "1" *-- "N" 借书记录 : 借书和还书
-	借书记录 "1" o-- "1" 图书 : 一一对应
-	借书记录 "N" -- "1" 图书管理员 : 登记和归还
-	图书管理员 "N" -- "N" 图书 : 维护图书
-	图书管理员 "N" -- "N" 读者 : 维护读者信息
+	visitor <|-- reader : 注册登录
+	reader "1" *-- "N" order : 借书和还书
+	order "1" o-- "1" book : 一一对应
+	order "N" -- "1" libraryManager : 登记和归还
+	libraryManager "N" -- "N" book : 维护图书
+	libraryManager "N" -- "N" reader : 维护读者信息
 
 
 }
