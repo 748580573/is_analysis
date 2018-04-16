@@ -22,7 +22,7 @@ object order {
 
 
 流程三
-
+````
 @startuml
 
 	object book {
@@ -40,6 +40,7 @@ object order {
 ````
 ![图书对象](https://github.com/748580573/is_analysis/blob/master/test3/%E5%9B%BE%E4%B9%A6%E5%AF%B9%E8%B1%A1.png)
 
+
 ##### 流程三：游客对象
 
 ````
@@ -51,6 +52,7 @@ object order {
 @enduml
 ````
 ！[游客对象]（https://github.com/748580573/is_analysis/blob/master/test3/%E6%B8%B8%E5%AE%A2%E5%AF%B9%E8%B1%A1.png）
+
 
 ##### 流程四：管理员对象
 
@@ -65,6 +67,8 @@ object libraryManager {
 
 @enduml
 ````
+![管理员对象](https://github.com/748580573/is_analysis/blob/master/test3/%E7%B3%BB%E7%BB%9F%E5%AF%B9%E8%B1%A1.png)
+
 
 
 ##### 流程五：系统对象
@@ -117,9 +121,12 @@ object reader {
 
 
 @enduml
-```
+````
+
+![](https://github.com/748580573/is_analysis/blob/master/test3/%E7%B3%BB%E7%BB%9F%E5%AF%B9%E8%B1%A1.png)
+
 ##### 记录如下
-![](./系统对象.png)
+
 ##### 流程六：系统类
 ##### uml源码如下
 ````
@@ -168,11 +175,13 @@ package "library" #DDDDDD {
 
 @enduml
 ````
+![系统类](https://github.com/748580573/is_analysis/blob/master/test3/%E7%B3%BB%E7%BB%9F%E7%B1%BB.png)
+
 ##### 
 
 ##### 流程七：读者对象
 
-```
+````
 @startuml
 	object reader {
 	 	username = "cxz"
@@ -180,3 +189,4 @@ package "library" #DDDDDD {
 	}
 @enduml
 ````
+![读者对象](https://github.com/748580573/is_analysis/blob/master/test3/%E8%AF%BB%E8%80%85%E5%AF%B9%E8%B1%A1.png)
