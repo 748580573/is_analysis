@@ -1,4 +1,4 @@
-@startuml
+﻿@startuml
 start
 :申请服务;
 if(是新用户?)then(是)
