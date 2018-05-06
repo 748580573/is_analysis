@@ -1,0 +1,18 @@
+@startuml
+class lead_list{
+    -int sernum
+    ..
+    -int book_id
+    ..
+    -int reader_id
+    ..
+    -Date lend_date
+    ..
+    -Date back_date
+    --
+    -void setter()
+    ..
+    -T getter()
+}
+
+@enduml

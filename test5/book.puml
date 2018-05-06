@@ -1,0 +1,27 @@
+@startuml
+
+class book{
+    -int book_id
+    ..
+    -String name
+    ..
+    -String author
+    ..
+    -String publish
+    ..
+    -String ISBN
+    ..
+    -String introduction
+    ..
+    -String language
+    ..
+    -float price
+    ..
+    -int pubdate
+    --
+    -void setter()
+    ..
+    -T getter()
+}
+
+@enduml

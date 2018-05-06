@@ -1,0 +1,14 @@
+@startuml
+
+class admin{
+     -int admin_id
+     ..
+     -String password
+     --
+     -void setter()
+     ..
+     -T getter()
+
+}
+
+@enduml

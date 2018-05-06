@@ -1,0 +1,6 @@
+@startuml
+admin --* book
+admin --* reader
+reader *-* book
+record -- book : 借书/ 还书
+@enduml

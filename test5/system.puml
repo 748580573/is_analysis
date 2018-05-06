@@ -1,0 +1,24 @@
+@startuml
+class system{
+    -Admin admin
+    ..
+    -Book book
+    ..
+    -Reader reader
+    ..
+    -Lend_list lend_list
+    --
+    +boolean lendBook(int bookId,int readerNumber)
+    ..
+    +boolean returnBook(int bookId,int readerNumber)
+    ..
+    +boolean addBook(Book book)
+    ..
+    +Book deleteBook(int bookId)
+    ..
+    +Book selectBook(int bookId)
+    ..
+    +boolean updateBook(Book book)
+}
+
+@enduml

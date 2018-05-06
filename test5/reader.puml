@@ -1,0 +1,20 @@
+@startuml
+class reader{
+    -int reader_id
+    ..
+    -String name
+    ..
+    -String sex
+    ..
+    -Date birth
+    ..
+    -String address
+    ..
+    -String telcode
+    --
+    -void setter()
+    ..
+    -T getter()
+}
+
+@enduml
