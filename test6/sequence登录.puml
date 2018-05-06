@@ -1,0 +1,14 @@
+@startuml
+actor teachers
+actor students
+actor vistor
+teachers -> teachers_sign_in:教师登录
+students -> students_sign_in:学生登录
+opt vistor
+vistor -> teachers_sign_in:尝试登录
+teachers_sign_in-->vistor :登录失败
+vistor -> students_sign_in:尝试登录
+students_sign_in-->vistor :登录失败
+
+end
+@enduml

@@ -1,0 +1,90 @@
+@startuml
+title 基于GitHub的实验管理平台--类图
+
+class users {
+    -<b>user_number</b> （用户编号）
+    ..
+    -user_name （用户真实姓名）
+    ..
+    -class_number  （班级号）
+    ..
+    -github_username （用户GitHub账号）
+    ..
+    -update_date （用户GitHub账号修改日期）
+    ..
+    -password （用户密码）
+    ..
+    -disable （用户是否禁用）
+}
+class teachers{
+    -int <b>teacher_number</b> （老师编号）
+    ..
+    -String teacher_name （老师姓名）
+    ..
+    -int teacher_age   （老师年龄）
+    ..
+    -String department （老师所属部门）
+}
+class students{
+    -int <b>student_number</b> （学号）
+    ..
+    -int user_number           (用户编号)
+    ..
+    -String student_name（姓名）
+    ..
+    -int class_number （班级）
+    ..
+    -String student_major    （专业）
+    ..
+    -float result_sum    （成绩汇总）
+    ..
+    -boolean web_sum （网站正确与否汇总）
+    ..
+}
+users <|- students
+users <|-- teachers
+class grades {
+    -<b>student_number</b> （学号）
+    ..
+    -<b>test_number</b> （实验编号）
+    ..
+    -<b>student_number<b> （学生编号）
+    ..
+    -subject_name          （课程名）
+    ..
+    -result （分数）
+    ..
+    -memo （评价）
+    ..
+    -update_date （评改日期）
+    ..
+    -part （评分细则）
+    ..
+    -part_grades （每个评分中细则的分数）
+}
+class tests{
+    -<b>tests_id</b> （实验编号）
+    ..
+    -tests_name（实验名称）
+}
+class courses{
+    -<b>courses_id</b> （课程编号）
+    ..
+    -   courses_name （课程名称）
+    ..
+    -   courses_tech （开课教师）
+    ..
+    -   courses_coll （开课学院）
+}
+class semesters {
+    -   <b> semester_id</b> （学期名称）
+    ..
+    -    semesters_name（学期名称）
+}
+semesters "n"-- "1" teachers
+students "1" -- "n"  grades
+tests "1" -- "n"  grades
+courses "1"-- "n"tests
+semesters "1"-- "n" courses
+
+@enduml

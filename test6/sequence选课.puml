@@ -1,0 +1,10 @@
+@startuml
+actor teachers
+actor students
+teachers -> courses_resource:获取课程库
+courses_resource -> courses:选择开课
+opt 教师已开课
+students ->courses_resource
+courses_resource -> courses:选择课程
+end
+@enduml

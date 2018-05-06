@@ -1,0 +1,15 @@
+@startuml
+title 基于GitHub的实验管理平台--学生列表用例的顺序图
+actor teachers
+actor students
+actor vistors
+teachers -> teachers_info: 查看或修改本教师的用户信息
+teachers -> students_info:查看或修改所有学生的用户信息
+students ->students_info :学生查看或修改自己的用户信息
+alt vistors
+vistors ->teachers_info:不能查看或修改
+vistors ->students_info:不能查看或修改
+
+end
+
+@enduml
